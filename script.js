@@ -221,3 +221,19 @@ console.log(`----------------
 12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true 
 if it is hot outside and if moneyInPocket is greater than 10.50.
 ----------------`);
+
+//function invoked with 2 parameters
+const willBuyDrink = (isHotOutside, moneyInPocket) => {
+
+    //checks for both logical conditions
+    if (isHotOutside === true && moneyInPocket > 10.50) {
+        //retrun when condtions are met
+        return true;
+    }
+
+    //retrun for all other cases
+    return false;
+}
+
+//invoking the function
+console.log(willBuyDrink(true, 11));
