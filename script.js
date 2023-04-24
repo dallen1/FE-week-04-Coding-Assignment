@@ -15,3 +15,10 @@ console.log(`----------------
 //uses the length attribute to programtically get the last index
 console.log(ages[ages.length -1] - ages[0]);
 
+console.log(`----------------
+1b.	Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).
+----------------`);
+
+//using the push method to append an index with a value to the ages array
+ages.push(33);
+console.log(ages[ages.length -1] - ages[0]);
