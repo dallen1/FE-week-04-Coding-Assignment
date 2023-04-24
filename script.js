@@ -80,3 +80,26 @@ console.log(`----------------
 4.	How do you access the first element of any array?
 ----------------`);
 console.log(`To access the first element we use the index of 0. This is written as array[0].`);
+
+console.log(`----------------
+5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+
+For example:
+
+let names = ["Kelly", "Sam", "Kate"]; 	//starting with this array
+let nameLengths = [5, 3, 4]; 			//create this new array
+----------------`);
+//initialize variable
+let nameLengths =[];
+
+//create for loop
+for (let i=0;i<names.length;i++){
+    //assinging the index of nameLength to be the length of the value of name at the same index
+    nameLengths[i]=names[i].length;
+}
+console.log("Array of name lengths: " + nameLengths);
+
+console.log(`----------------
+6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
+
+----------------`);
