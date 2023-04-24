@@ -22,3 +22,18 @@ console.log(`----------------
 //using the push method to append an index with a value to the ages array
 ages.push(33);
 console.log(ages[ages.length -1] - ages[0]);
+
+console.log(`----------------
+1c.	Use a loop to iterate through the array and calculate the average age. 
+----------------`);
+//initialize vars for averaging ages
+let sum = 0;
+let avg = 0;
+//for loop to go through all elements of the array
+for (let i=0;i<ages.length;i++) {
+    //summing the ages
+    console.log("Age tally: " + (sum += ages[i]));      
+}
+//calculate the avg
+avg = sum / (ages.length);
+console.log("Average age: "+avg);
