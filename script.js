@@ -57,3 +57,14 @@ for (let i=0;i<names.length;i++) {
 }
 charAvg = charSum / (names.length);
 console.log("Average number of letters: "+charAvg);
+
+console.log(`----------------
+2b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. 
+----------------`);
+//create new string var to hold concat
+let concatNames = "";
+for (let i=0;i<names.length;i++) { 
+    //create concat string from looping through indexes of names
+    concatNames += names[i]+ " ";
+    console.log("Name concat so far: " + concatNames); 
+}
