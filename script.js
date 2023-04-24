@@ -68,3 +68,15 @@ for (let i=0;i<names.length;i++) {
     concatNames += names[i]+ " ";
     console.log("Name concat so far: " + concatNames); 
 }
+
+console.log(`----------------
+3.	How do you access the last element of any array?
+----------------`);
+console.log(`A reliable way to get the last element of an array is to use the length method 
+on the array then subtract 1 to get the index. This is because indexing starts 
+at 0 so the value of the last index is the result of the length method minus 1.`);
+
+console.log(`----------------
+4.	How do you access the first element of any array?
+----------------`);
+console.log(`To access the first element we use the index of 0. This is written as array[0].`);
