@@ -112,3 +112,25 @@ for (let i=0;i<nameLengths.length;i++) {
 }
 
 console.log("The sum of the length of the names is: " + sumLengths);
+
+console.log(`----------------
+7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+----------------`);
+
+//create arrow function with 2 parameters
+const concatFunction = ( word, n) => {
+    //initialize empty array
+    let concatWord =[];
+
+    //create loop to run number of times defined by n
+    for (let i=0;i<n;i++) {
+       //fill array with contents of word as many times as instructed
+       concatWord[i]=word;
+    }
+    //run concat operation
+    word=concatWord.join('');
+    return word;
+};
+
+//exectutes function as described with required parameters
+console.log(concatFunction("Hello",3));
