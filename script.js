@@ -237,3 +237,29 @@ const willBuyDrink = (isHotOutside, moneyInPocket) => {
 
 //invoking the function
 console.log(willBuyDrink(true, 11));
+
+console.log(`----------------
+13.	Create a function of your own that solves a problem.   In comments, write what the function does and why you created it.
+----------------`);
+
+//creates function that returns an array of the fibonacci sequence. The taken parameter indictaes 
+//how many iterations the function should run.
+//It could be expanded with an input check for n to be a positive number >=3.
+
+const fibonacci = (n) => {
+    //initaiates the mathematical sequence
+    let sequence =[0,1];
+    
+    //starts the loop at index 0. It runs until the specific interation designated by n.
+    for (let i=0;i<=n;i++) {
+
+            //fibonacci interations start after the inital indexs are set
+            if (i >=2)(
+            sequence[i]= sequence[i-1]+sequence[i-2]
+            )
+        }
+    return sequence;
+}
+
+//invokes the function up to iteration 12.
+console.log(fibonacci(12));
