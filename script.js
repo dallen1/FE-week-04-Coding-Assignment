@@ -147,3 +147,32 @@ const fullName = (firstName, lastName) => `${firstName} ${lastName}`;
 
 //calling the function
 console.log(fullName("Michael", "Jackson"));
+
+console.log(`----------------
+9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers
+in the array is greater than 100.
+----------------`);
+
+//decalre function with 1 param
+const break100 = (arr1) => {
+    //initialize sum tracker
+    let sum =0;
+
+    //loops over array
+    for (let i=0;i<arr1.length;i++) {
+
+        //sums values
+        sum += arr1[i];
+        
+        //returns true when we meet the condition of greater than 100
+        if (sum > 100) {
+            return true;
+        }
+    }
+
+    //return if condition unmet
+    return false
+}
+
+//testing function with ages array
+console.log(break100(ages));
