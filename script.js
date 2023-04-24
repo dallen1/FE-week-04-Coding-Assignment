@@ -37,3 +37,23 @@ for (let i=0;i<ages.length;i++) {
 //calculate the avg
 avg = sum / (ages.length);
 console.log("Average age: "+avg);
+
+console.log(`----------------
+2. Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’. 
+----------------`);
+
+//array initilization
+let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
+console.log(names);
+
+console.log(`----------------
+2a.	Use a loop to iterate through the array and calculate the average number of letters per name. 
+----------------`);
+let charSum =0;
+let charAvg =0;
+for (let i=0;i<names.length;i++) {
+      //summing the length of names
+      console.log("Name length tally: " + (charSum += names[i].length)); 
+}
+charAvg = charSum / (names.length);
+console.log("Average number of letters: "+charAvg);
