@@ -176,3 +176,22 @@ const break100 = (arr1) => {
 
 //testing function with ages array
 console.log(break100(ages));
+
+console.log(`----------------
+10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
+----------------`);
+
+//create single parameter function
+const indexAvg = (arr1) => {
+    //initialize counting var
+    let sum =0;
+    //loop through index
+    for (let i=0;i<arr1.length;i++){
+        //create sum
+        sum +=arr1[i];
+    }
+    //calc avg
+    return sum / arr1.length;
+}
+//invoke function with ages array. It returns the same value as for question 1c.
+console.log(indexAvg(ages));
