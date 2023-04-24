@@ -82,7 +82,8 @@ console.log(`----------------
 console.log(`To access the first element we use the index of 0. This is written as array[0].`);
 
 console.log(`----------------
-5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names
+array and add the length of each name to the nameLengths array.
 
 For example:
 
@@ -114,7 +115,9 @@ for (let i=0;i<nameLengths.length;i++) {
 console.log("The sum of the length of the names is: " + sumLengths);
 
 console.log(`----------------
-7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated
+to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would 
+expect the function to return ‘HelloHelloHello’).
 ----------------`);
 
 //create arrow function with 2 parameters
@@ -134,3 +137,13 @@ const concatFunction = ( word, n) => {
 
 //exectutes function as described with required parameters
 console.log(concatFunction("Hello",3));
+
+console.log(`----------------
+8.	Write a function that takes two parameters, firstName and lastName, and returns a full name.
+  The full name should be the first and the last name separated by a space.
+----------------`);
+//using an arrow syntax and string literals to constuct the function
+const fullName = (firstName, lastName) => `${firstName} ${lastName}`;
+
+//calling the function
+console.log(fullName("Michael", "Jackson"));
