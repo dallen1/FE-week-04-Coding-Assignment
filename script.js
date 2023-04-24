@@ -101,5 +101,14 @@ console.log("Array of name lengths: " + nameLengths);
 
 console.log(`----------------
 6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
-
 ----------------`);
+//initialize our return variable
+let sumLengths=0;
+
+//create loop
+for (let i=0;i<nameLengths.length;i++) {
+    //increasing sumlengths each iteration by the retrived index.
+    sumLengths+= nameLengths[i];
+}
+
+console.log("The sum of the length of the names is: " + sumLengths);
