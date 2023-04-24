@@ -195,3 +195,29 @@ const indexAvg = (arr1) => {
 }
 //invoke function with ages array. It returns the same value as for question 1c.
 console.log(indexAvg(ages));
+
+console.log(`----------------
+11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the
+first array is greater than the average of the elements in the second array.
+----------------`);
+
+//create function with two params
+const arrCompare = (arr1, arr2) => {
+
+    //using the function created for question 9, we compare two arrays
+    if (indexAvg(arr1) > indexAvg(arr2)) {
+        //return when array 1 is larger
+        return true;
+    }
+
+    //return for all other conditions
+    return false;
+}
+
+//invoke new function
+console.log(arrCompare([1,2,3,4,5], [1,2,3,4]));
+
+console.log(`----------------
+12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true 
+if it is hot outside and if moneyInPocket is greater than 10.50.
+----------------`);
