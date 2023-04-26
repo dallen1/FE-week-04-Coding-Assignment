@@ -247,16 +247,14 @@ console.log(`----------------
 //It could be expanded with an input check for n to be a positive number >=3.
 
 const fibonacci = (n) => {
-    //initaiates the mathematical sequence
+    //initaiates the mathematical sequence with the first 2 index values
     let sequence =[0,1];
     
-    //starts the loop at index 0. It runs until the specific interation designated by n.
-    for (let i=0;i<=n;i++) {
+    //starts the loop at index 2. It runs until the specific interation designated by n.
+    for (let i=2;i<=n;i++) {
 
-            //fibonacci interations start after the inital indexs are set
-            if (i >=2)(
             sequence[i]= sequence[i-1]+sequence[i-2]
-            )
+            
         }
     return sequence;
 }
