@@ -247,6 +247,9 @@ console.log(`----------------
 //It could be expanded with an input check for n to be a positive number >=3.
 
 const fibonacci = (n) => {
+    if (n <=3 ) {
+        return `n should at least be 3`
+    }
     //initaiates the mathematical sequence with the first 2 index values
     let sequence =[0,1];
     
